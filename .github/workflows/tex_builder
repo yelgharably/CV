@@ -1,0 +1,29 @@
+name: Build and Deploy LaTeX Resume
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up LaTeX and Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full pandoc
+
+      - name: Convert LaTeX to HTML
+        run: pandoc main.tex -o index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
