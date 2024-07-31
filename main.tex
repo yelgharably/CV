@@ -1,0 +1,408 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	  \textbf{\Huge Youssef El Gharably} & \\
+	  701 Harrisburg Ave, Lancaster, PA, 17603, USA & \\
+	  \href{tel:+12232789055}{+1 (223) 278-9055} & \href{mailto:yelghara@fandm.edu}{yelghara@fandm.edu}\\
+	  \href{https://github.com/yelgharably}{GitHub: yelgharably} & \href{mailto:youssefelgharably0404@gmail.com}{youssefelgharably0404@gmail.com}\\
+	\end{tabular*}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Franklin and Marshall College}{August 2022 -- May 2025}
+      {Major in Astrophysics with a Minor in Applied Mathematics, 3.80 GPA}
+      {Lancaster, PA}
+      
+      {\textit{Honors' and Dean's List | Charles A. Dana Scholar}}
+      
+    \resumeSubheading
+      {Washington University in St. Louis}{December 2023 -- January 2024}
+      {Visiting student in Mckelvey School of Engineering for J-Term, 4.00 GPA}
+      {St. Louis, MO}
+
+      {\textit{Student of J-Term 2024 taking MEMS253}}
+     
+     \resumeSubheading
+       {Gharbiya STEM High School}{September 2019 -- July 2022}
+       {Mathematics Division, 3.82 GPA}
+       {Tanta, Egypt}
+       
+       {\textit{Ranked 82/2500 students in the country.}}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-1pt, parsep=3pt]
+                \item PHY112 - Intro to Electromagnetism (Fa22)
+                 \item Mathworks - MatLab Fundamentals (W22)
+                \item AST121 - Intro to Astrophysics (Sp23)
+                \item PHY223 - Modern Physics (Fa23)
+                \item MAT229 - Linear Algebra and Differential Equations (Fa23)
+                \item MEMS253 - Statics and Mechanics of Materials (Winter 23, WashU.)
+                \item PHY226 - Classical Mechanics (Sp24)
+                \item AST322 - Stellar Astrophysics (Sp24)
+                \item MAT215 - Statisitcal Modeling (Su24)
+                \item PHY331 - Mathematical Methods of Physics (Fa24)
+                \item PHY322 - Experimental Physics: Electronics (Fa24)
+                \item PHY333 - Electromagnetism (Fa24)
+                \item MAT216 - Probability and Statistics (Fa24)
+                \item PHY344 - Quantum Mechanics (Planned, S25)
+                \item MAT372 - Origami Math (Planned, S25)
+                \item AST332 - Galaxies and Cosmology (Planned, S25)
+                \item AST422 - Advanced Methods in Astrophysics (Planned)
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Physics and Astronomy Department, Franklin and Marshall College}{August 2023 -- December 2023}
+      {Research Assistant (AST290, Fall 23), Fronefield Crawford Ph.D.}{Lancaster, PA}
+      \resumeItemListStart
+      \resumeItem{Project Title: Investigation and Development of the Small Radio Telescope in Franklin and Marshall Campus.}
+    \resumeItem{Developed a comprehensive plan for the investigation of the Small Radio Telescope owned by the Physics Department.}
+    \resumeItem{Implemented scripts on the control computer to acquire radio data, optimizing the telescope's performance and calibration.}
+    \resumeItem{Enhanced the quality of Astronomical observation labs conducted by astrophysics professors in classes.}
+    \resumeItem{Investigated the mechanics and electronic systems of Radio Telescopes with the Department's electronics engineer to deepen knowledge of Astronomical Instruments and telescopes.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Physics and Astronomy Department, Franklin and Marshall College}{June 2024 -- July 2024}
+      {Summer Hackman Scholar Research Assistant, Ryan Trainor Ph.D.}{Lancaster, PA}
+      \resumeItemListStart
+       \resumeItem{Project Title: Characterizing Black Holes and the Circumgalactic Medium with Keck Cosmic Web Imager}
+       \resumeItem{Developed Monte Carlo Markov Chain algorithim using python for creating statistical models of the Mariposa nebula.}
+       \resumeItem{Derived substantial results from models to characterize AGN's through spectroscopy readings.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Physics and Astronomy Department, Franklin and Marshall College}{Jan 2024 -- August 2024}
+      {Research Assistant (AST390, Spring 2024) and Summer Hackman Scholar, Deborah Schmidt Ph.D.}{Lancaster, PA}
+      \resumeItemListStart
+      \resumeItem{Project Title: Investigations of Chemical Complexity in Proto-Planetary Nebulae, currently through the process of writing a paper to publish.}
+       \resumeItem{Co-authored proposals for observations in the Arizona Radio Observatory.}
+       \resumeItem{Wrote a script to automatically produce publication worthy figures based on any CLASS data during Summer 2024. Published script on GitHub for other astronomers to benefit from it.}
+\resumeItem{Utilized GILDAS tools to determine optimal observation times.}
+\resumeItem{Analyzed radio data from Arizona Radio Observatory to identify HCO, HCN, HNC, and HCO3N compounds in protoplanetary nebulae.}
+\resumeItem{Played a key role in the first-ever detection of HCO3N molecules in a protoplanetary nebula through data analysis.}
+
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Earth and Environment Department, Franklin and Marshall College}{Jan 2024 -- May 2024}
+      {Research Assistant in Landmine Detection Research (PHY390, Spring 24), Fronefield Crawford Ph.D.}{Lancaster, PA}
+      \resumeItemListStart
+        \resumeItem{Tested optical systems to detect tripwires using Python and Raspberry Pi.}
+\resumeItem{Assisted in construction of the mechanical arm that integrates the optical system.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Physics and Astronomy Department, Franklin and Marshall College}{Jan 2023 -- May 2023}
+      {Research Assistant in NANOGRAV Pulsar Survey (AST290, Spring 23), Fronefield Crawford Ph.D.}{Lancaster, PA}
+      \resumeItemListStart
+        \resumeItem{Assisted the Physics Department in Franklin and Marshall College with their research on surveying potential Pulsar star signals brought by observations of the Parkes Telescope in Australia.}
+      \resumeItemListEnd
+     
+\resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+\section{Teaching Experience}
+\resumeSubHeadingListStart
+
+	 \resumeSubheading
+	    {Governor’s STEM Institute Camp at Green Bank Observatory}{July 2023}
+	    {Mentor at GSI}{Green Bank, WV}
+	    \resumeItemListStart
+	      \resumeItem{Selected alongside 10 other undergraduate mentors to advise and lead an astronomy project to determine the efficiency of the 40-foot-telescope for rising 9th graders from West Virginia}
+	      \resumeItem{WVGSI is a program funded by West Virginia’s Governor and hosted at Green Bank Observatory to educate K-12 students about radio astronomy with hands-on experience.}
+	      \resumeItem{Residential Adviser for bunkhouse during the program for the 9th graders.}
+	    \resumeItemListEnd
+  
+	  \resumeSubheading
+	      {Quantitative and Science Center, Franklin and Marshall College}{August 2023 -- Present}{Mathematics Tutor for Q\&SC for Calculus 1, 2, 3 and Linear Algebra, Differential Equations}{Lancaster, PA}
+	      \resumeItemListStart
+	        \resumeItem{Worked in coordination with the Math department to tutor students in math classes on campus via individual appointments and Drop In tutoring.}
+	        \resumeItem{Assigned to multiple math sections to be the main tutor, professors reported that students who came to my tutoring sessions had a significant increase in their grades for calculus.}
+	        \resumeItem{Significantly improved my tutees' math grades.}
+	      \resumeItemListEnd
+	      
+	      \resumeSubheading
+      {Physics and Astronomy Department, Franklin and Marshall College}{Jan 2024 -- May 2024}
+      {Lab Teaching Assistant for AST121 (Introduction to Astrophysics)}{Lancaster, PA}
+      \resumeItemListStart
+        \resumeItem{Assisted in the introduction to astrophysics lab, helped a class of 25 students navigate radio astronomy and basic astrophysics concepts.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Sparklab in Franklin and Marshall}{August 2022 - May 2023, January 2024}
+    {Tech Tutor}{Lancaster, PA}
+    \resumeItemListStart
+      \resumeItem{Assisted students on campus with their technical issues, operating poster printers, 3d printers, resin printers, and managing classroom technical equipment.}
+      \resumeItem{Constructed multiple projects using soldiering, Arduino, and Rasberry Pi.}
+      \resumeItem{Repaired and maintained Ultimaker and Prusa 3D Printers.}
+      \resumeItem{Maintained and maintained electronics and hardware.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Shadeck-Fackenthal Library in Franklin and Marshall}{August 2022 - May 2023}
+    {Circulation Assistant}{Lancaster, PA}
+    \resumeItemListStart
+      \resumeItem{Assisted students and patrons in retrieving books and browsing in the College Library}
+      \resumeItem{Shelved returned books once or twice weekly throughout the library.}
+    \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+    	{\textbf{Automated publishing-worthy figure builder for radio observations.} $|$ \emph{Python}}{Summer 2024}
+    	\vspace{-25pt}
+    
+    \resumeProjectHeading
+    	{\textbf{Monte Carlo Markov Chain Statistical Modeling Program for Active Galaxy Nucleai} $|$ \emph{Python}}{Summer 2024}
+    	\vspace{-25pt}
+    \resumeProjectHeading
+    	{\textbf{Finite Element Analysis Material Bending simulator} $|$ \emph{Python}} {Spring 2024}
+    	\vspace{-25pt}
+    
+      \resumeProjectHeading
+          {\textbf{LED Panel For SparkLab at Franklin and Marshall College} $|$ \emph{Micro-controller programming}}{January 2023}
+          \vspace{-25pt}
+      \resumeProjectHeading
+          {\textbf{Solar Tracker Thermal Generator for High School Capstone} $|$ \emph{Arduino}}{September 2021 - January 2022}
+          \resumeItemListStart
+            \resumeItem{Designed a system using optics to track and focus the sun's thermal energy into a steam engine}
+          \resumeItemListEnd 
+          \vspace{-3pt}
+    \resumeSubHeadingListEnd
+\vspace{-7.5pt}
+
+%-----------Presentations-------
+\section{Oral Presentations}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+	{Modeling Spectral Emissions for characterizing real data}{July 2024}
+	{Summer Hackman Research Scholar, Professor Ryan Trainor}{Lancaster, PA}
+	\resumeItemListStart
+		\resumeItem{Presented my work on Monte Carlo Markov Chain modeling of spectral emissions using Cloudy data aganist CECILIA data.}
+		\resumeItem{No formal paper is wrriten yet, research summary could be found \href{https://drive.google.com/file/d/1pdic1Xo9b_9rP_IwuPj-X7j9XGsKKe-2/view?usp=sharing}{\textit{here.}}}
+	\resumeItemListEnd
+
+\resumeSubheading
+    {The Theories behind the Maximum Size of White Dwarfs}{April 2024}
+    {Stellar Astrophysics (AST322), Professor Deborah Schmidt}{Lancaster, PA}
+    \resumeItemListStart
+      \resumeItem{Presented the work of S. Chandrasekhar published by the Indian Academy of Sciences for a class project}
+    \resumeItemListEnd
+
+\resumeSubheading
+	{CHIME Telescopes and the International Pulsar Timing Array}{May 2024}
+	{Stellar Astrophysics (AST322), Professor Deborah Schmidt}{Lancaster, PA}
+	\resumeItemListStart
+		\resumeItem{Presented my final paper of Stellar Astrophysics as an investigation of an ongoing area of research in Stellar Astrophysics}
+		\resumeItem{The paper could be accessed \href{https://drive.google.com/file/d/1cJZISS8DrxotopiGoOAdU125DQ4NQAvo/view?usp=sharing}{\textit{here}}, written in the ApJ format.}
+	\resumeItemListEnd
+
+\resumeSubheading
+	{Finite Element Analysis using Python to simulate material bending}{May, 2024}
+	{Classical Mechanics (PHY226), Professor Ryan Trainor}{Lancaster, PA}
+	\resumeItemListStart
+		\resumeItem{Presenting my final project for the computational physics lab of Classical Mechanics class.}
+		\resumeItem{The project report could be accessed \href{https://drive.google.com/file/d/1223KLIkQvRVcOTqhtgjDWnJgVCJZH9Ih/view?usp=sharing}{\textit{here}}.}
+	\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Arduino, Wolfram Mathematica, MatLab, LaTeX, R, Rmarkdown.} \\
+      \textbf{Hardware Experience}{: Robotics, 3D Printers, Windows PC Hardware, Soldiering.} \\
+      \textbf{Design Software and Other Skills}{: 3D Printing, Blender, Photoshop, Lightroom, Premiere} \\
+     \textbf{Languages}{: Arabic(Native/Bilingual Proficiency) - English (Native/Bilingual Proficiency) - French (Limited Working Proficiency)}\\
+     \textbf{Hobbies}{: Photography, Programming, Reading.} \\
+     \textbf{Currently Learning}{: CAD, Finite Element Analysis, Mechanical Systems.} \\
+    }}
+ \end{itemize}
+
+
+ %-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Muslim Student Association}{August 2023 -- May 2024}{President}{Franklin and Marshall College}
+            \resumeItemListStart
+                \resumeItem{Rewrote the Muslim Student Associations' constitution and added addendums to ensure inclusion and condem hate speech aganist all religions.}
+                \resumeItem{Represent the Muslim student body in the Student Union Congress, ensure accommodation for the Muslim student body on campus, and participate in philanthropy for underrepresented Muslim countries and regions.}
+                \resumeItem{Significantly contributed in initiatives and meeting with the college administration and other organizations on campus to counteract hate speech, Islamophobia, and anti-semitism.}
+                \resumeItem{Planned and led the preparations for Ramadan in both spring 2023, and spring 2024; had meetings with the campus dining services and organized surveys with office of faith and meaning, and Diversity, Equity, Inclusion office to accommodate Muslim students' needs for Ramadan.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Facilitator and Student Panelist for Identity, Power, and Inequality class.}{Fall 2023}{Panelist and Student Leader}{Franklin and Marshall College}
+            \resumeItemListStart
+                \resumeItem{Invited as a guest panelist for a student panel in INT127 (Identity, Power, and Inequality) due to known efforts on campus to establish peace in the student body and advocacy for minorities.}
+            \resumeItemListEnd
+
+        \resumeSubheading{Competitive College Club, EducationUSA}{February 2020 - May 2023}{Current Alumni, Former Vice President}{Amideast Alexandria, Egypt}
+            \resumeItemListStart
+                \resumeItem{The Education USA Competitive College Club (CCC) is an intensive group advising program that assists top high school students who want to be competitive applicants to U.S. colleges and universities.}
+                \resumeItem{Participated in the intensive mentorship program, standardized tests club, creative writing club, 2-week intensive boot camp with intensive tasks and book club in which I received guidance from graduating seniors and alumni.}
+                \resumeItem{Chosen as Vice President by Amideast Advisers as of February 2021.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+\end{document}
